@@ -1,4 +1,5 @@
 <?php
+
 $blogs = [
   [
     "title" => "New Construction technology awarness.",
@@ -10,13 +11,13 @@ $blogs = [
     "title" => "Best Construction techniques.",
     "desc" => "",
     "image" => "assets/bestconstructiontech.png",
-    "link" => "#"
+    
   ],
   [
     "title" => "Building your dreams with quality material.",
     "desc" => "",
     "image" => "assets/buildingyourdreams.png",
-    "link" => "#"
+    
   ]
 ];
 ?>
@@ -63,21 +64,21 @@ $blogs = [
     Latest News
   </h2>
 
-  <!-- Cards -->
+  <!-- Cards for blogs -->
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3">
     
     <?php foreach ($blogs as $index => $blog): ?>
       <div class="<?= $index === 0 ? 'lg:col-span-2' : '' ?>">
         <div class="bg-white rounded-xl overflow-hidden transition h-full flex flex-col">
           
-          <!-- Image -->
+          <!-- Image of the blog -->
           <img 
             src="<?= $blog['image'] ?>" 
             class="w-full h-56 object-cover rounded-md"
             alt="Blog image"
           >
 
-          <!-- Content -->
+          <!-- Content of the blog -->
           <div class="p-5">
             <h3 class="text-lg font-semibold mb-2">
               <?= $blog['title'] ?>
@@ -104,7 +105,7 @@ $blogs = [
 
   </div>
 
-  <!-- Button -->
+  <!-- Button to View all blogs -->
   <div class="text-center mt-12">
     <a href="#" class="inline-block bg-[#00B7C3] text-white px-6 py-3 rounded-lg hover:bg-teal-400 transition">
       View All Blogs
